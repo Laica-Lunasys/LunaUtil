@@ -1,0 +1,41 @@
+#####################################
+#                                   #
+#   LunaCmd LanguageFiles(Japanese) #
+#                                   #
+#     Author:Laica-Lunasys squarep  #
+#                                   #
+#     Translator:Laica-Lunasys      #
+#                                   #
+#####################################
+
+ChangeGM: '%playerさんのゲームモードを %gamemodeに変更しました。'
+
+ChangeFly: '&a%playerさんの飛行モードを%sにしました'
+
+CFPlayer: '&c%playerさんが見つかりません!'
+
+Successtp: '&fテレポート完了しました　&a%from&eさんから&a%to&eさん'
+
+DontHavePermission: '&c権限がありません!&7(%perm)'
+
+notExecShell: '&c%playerさんはシェルを実行する権限を持っていません。'
+
+notExecOS: '&cLunaCmd のシェル機能は %OSをサポートしていません'
+
+SetJail: 'Jailを設定しました。'
+
+tpJail: 'あなたはJailへとテレポートされました。'
+
+unJail: 'Jailを解除されました。'
+
+FailedJail: '%cJailに追加出来ません!'
+
+LoginMsg: '&f%player&eさんが&a接続&f&eしました &7[%country]'
+ExitMsg: '&f%player&eさんが&c切断&f&eしました'
+World:
+  Create: '%worldを作成しました。'
+  Tp: '%playerさんを%worldにテレポートしました!'
+  Remove: '&a%worldは削除されました。'
+  FailedCreate: '&c%worldの作成に失敗しました!'
+  FailedRemove: '&c%worldの削除に失敗しました!'
+  List: '%world %type'

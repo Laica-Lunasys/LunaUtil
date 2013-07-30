@@ -1,0 +1,41 @@
+#####################################
+#                                   #
+#   LunaCmd LanguageFiles(English  )#
+#                                   #
+#     Author:Laica-Lunasys squarep  #
+#                                   #
+#     Translator:Laica-Lunasys      #
+#                                   #
+#####################################
+
+ChangeGM: 'Player %player Changed gamemode %gamemode.'
+
+ChangeFly: '&3%player turned %s Flymode'
+
+CFPlayer: '&c%player is not found!'
+
+Successtp: '&fTeleported!@&a%from&f => &a%to&f'
+
+DontHavePermission: '&cYou do not have permission (%perm)'
+
+notExecShell: '&4%player have not permission.'
+
+notExecOS: '&cLunaCmd is not support %OS.'
+
+SetJail: 'Set Jail'
+
+tpJail: 'You are teleported jail.'
+
+unJail: 'You are released Jail.'
+
+FailedJail: 'Failed teleport jail.(this player have ignore permissions)'
+
+LoginMsg: '&f%player&e was &aConnect&f&e to Server &7[%country]'
+ExitMsg: '&f%player&e was &cDisconnect&f&e to Server'
+World:
+  Create: 'Created world : %world'
+  Tp: 'Player %player was teleported %world.'
+  Remove: 'Removed world %world'
+  FailedCreate: 'Failed world create %world'
+  FailedRemove: 'Failed world remove %world'
+  List: '%world %type'

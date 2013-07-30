@@ -1,0 +1,14 @@
+name: LunaUtil
+main: LunaUtil.Core.LunaUtil
+version: 0.5
+authors: [Lunasys,squarep,pabook]
+commands:
+   gm:
+   fly:
+   tp:
+   t2p:
+   tphere:
+   tploc:
+   shell:
+   jail:
+   world:
