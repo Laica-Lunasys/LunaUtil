@@ -17,13 +17,14 @@ public class CmdTransPort implements CommandExecutor {
 	public CmdTransPort(LunaUtil par1Plugin) {
 		this.plugin = par1Plugin;
 	}
+	@Override
 	@SuppressWarnings({ })
 	public boolean onCommand(CommandSender par1Sender, Command par2Command, String par3CmdLine, String[] par4args) {
 		if(!(par1Sender instanceof Player) && par4args.length < 1) {
 			this.plugin.getLogger().info("Can\'t execute this command on console.");
 			return false;
 		} else {
-			if(!Util.hasPerm(plugin.PermTP, ((Player)par1Sender), plugin)){
+			if(!Util.hasPerm(plugin.PermTP, (par1Sender), plugin)){
 				return false;
 			}
 			Location loc = ((Player)par1Sender).getLocation();

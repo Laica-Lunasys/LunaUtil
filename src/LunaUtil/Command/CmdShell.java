@@ -23,6 +23,7 @@ public class CmdShell implements CommandExecutor {
 	public CmdShell(LunaUtil par1Plugin) {
 		this.plugin = par1Plugin;
 	}
+	@Override
 	@SuppressWarnings({ })
 	public boolean onCommand(CommandSender par1Sender, Command par2Command, String par3CmdLine, String[] par4args) {
 		if(!System.getProperty("os.name").matches("^*(Linux|BSD)*")){
@@ -39,7 +40,7 @@ public class CmdShell implements CommandExecutor {
 			// パーミッションを使う場合	
 			if (plugin.canUsePermission) {
 				// パーミッションチェック
-				if (Util.hasPerm(plugin.PermSH, ((Player) par1Sender), plugin)) {
+				if (Util.hasPerm(plugin.PermSH, (par1Sender), plugin)) {
 					return false;
 				}
 			// パーミッションを使わない場合

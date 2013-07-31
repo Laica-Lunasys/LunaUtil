@@ -28,6 +28,7 @@ public class CmdWorld implements CommandExecutor {
 		this.plugin = par1Plugin;
 		worldutil = new WorldUtil(plugin);
 	}
+	@Override
 	public boolean onCommand(CommandSender par1Sender, Command par2Command, String par3CmdLine, final String[] par4args) {
 		Player player = null;
 		if(par4args.length < 1){

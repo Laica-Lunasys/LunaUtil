@@ -48,6 +48,7 @@ public class LunaUtil extends JavaPlugin {
 	public ConfigurationManager jail;
 	public BKCommonLibCooperate bkcommonlib;;
 
+	@Override
 	public void onEnable() {
 		plugin = this;
 		this.log = this.getLogger();
@@ -112,6 +113,7 @@ public class LunaUtil extends JavaPlugin {
 		String var1 = country.getString("country." + par1Cnt.toLowerCase());
 		return Util.maskedStringReplace((var1 != null ? var1 : par1Cnt),null);
 	}
+	@Override
 	public void onDisable() {
 		this.log.info(PluginName + " has been disabled.");
 	}

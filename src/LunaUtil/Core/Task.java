@@ -11,6 +11,7 @@ import com.bergerkiller.bukkit.common.utils.CommonUtil;
 public class Task extends Thread {
 	public static void delete(final CommandSender sender, final String worldname) {
 		new AsyncTask("World deletion thread") {
+			@Override
 			public void run() {
 				if (new WorldUtil(LunaUtil.plugin).delWorld(worldname)) {
 					CommonUtil.sendMessage(sender, ChatColor.GREEN + "World '" + worldname + "' has been removed!");

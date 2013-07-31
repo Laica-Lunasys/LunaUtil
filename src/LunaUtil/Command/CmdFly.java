@@ -23,7 +23,7 @@ public class CmdFly implements CommandExecutor {
 			this.plugin.getLogger().info("Can\'t execute this command on console.");
 			return false;
 		} else {
-			if(!Util.hasPerm(plugin.PermFLY, ((Player)par1Sender), plugin)){
+			if(!Util.hasPerm(plugin.PermFLY, (par1Sender), plugin)){
 				return false;
 			}
 		}

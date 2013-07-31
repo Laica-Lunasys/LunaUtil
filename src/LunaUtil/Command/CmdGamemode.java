@@ -18,13 +18,14 @@ public class CmdGamemode implements CommandExecutor {
 		this.plugin = par1Plugin;
 	}
 
+	@Override
 	public boolean onCommand(CommandSender par1Sender, Command par2Command, String par3CmdLine, String[] par4args) {
 		Player player = null;
 		if(!(par1Sender instanceof Player) && par4args.length < 1) {
 			this.plugin.getLogger().info("Can\'t execute this command on console.");
 			return false;
 		} else {
-			if(!Util.hasPerm(plugin.PermGM, ((Player)par1Sender), plugin)){
+			if(!Util.hasPerm(plugin.PermGM, (par1Sender), plugin)){
 				return false;
 			}
 			

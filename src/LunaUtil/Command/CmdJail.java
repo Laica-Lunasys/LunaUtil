@@ -18,6 +18,7 @@ public class CmdJail implements CommandExecutor {
 	public CmdJail(LunaUtil par1Plugin) {
 		this.plugin = par1Plugin;
 	}
+	@Override
 	@SuppressWarnings({ })
 	public boolean onCommand(CommandSender par1Sender, Command par2Command, String par3CmdLine, String[] par4args) {
 		Player player = null;
